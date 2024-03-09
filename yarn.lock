@@ -306,6 +306,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@lucasaugustsof/ts-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@lucasaugustsof/ts-config/-/ts-config-0.1.0.tgz#d0b6dc2604c7be3b7a5880efe97726af26ece11d"
+  integrity sha512-QoaQmjUEiEkxiwOmRS7WZAoQ+CwryY9yeXfpLr7ISiNcJuMJw0lFCQKn6WAzzC2LaRQzP8lN5IKAi22ocKmRNA==
+
 "@next/env@14.1.0":
   version "14.1.0"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-14.1.0.tgz#43d92ebb53bc0ae43dcc64fb4d418f8f17d7a341"
@@ -3944,7 +3949,7 @@ typed-array-length@^1.0.5:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
 
-typescript@^5:
+typescript@^5, typescript@^5.4.2:
   version "5.4.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.2.tgz#0ae9cebcfae970718474fe0da2c090cad6577372"
   integrity sha512-+2/g0Fds1ERlP6JsakQQDXjZdZMM+rqpamFZJEKh4kwTIn3iDkgKtby0CeNd5ATNZ4Ry1ax15TMx0W2V+miizQ==
