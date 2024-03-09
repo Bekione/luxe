@@ -7,20 +7,18 @@ import prompts from "prompts";
 import ora from "ora";
 import chalk from "chalk";
 
-const HOST = "https://api.github.com";
-const TEMPLATE = "repos/guhrodriguess/luxe/contents/src/app/_components/ui";
-const RAW =
-  "https://raw.githubusercontent.com/guhrodriguess/luxe/main/src/app/_components/ui";
-const COMPONENTS_DIR = path.resolve("ui");
+import { pathJoin } from "./utils/path-join.js";
+
+import { COMPONENTS_DIR, HOST, RAW, TEMPLATE } from "./utils/const.js";
 
 async function getAllCategories() {
-  const response = await fetch(`${HOST}/${TEMPLATE}`);
+  const response = await fetch(pathJoin(HOST, TEMPLATE));
   const data = await response.json();
 
   const categories = data.map((component) => {
     return {
       title: component.name,
-      value: `${TEMPLATE}/${component.name}`,
+      value: pathJoin(TEMPLATE, component.name),
     };
   });
 
@@ -28,7 +26,7 @@ async function getAllCategories() {
 }
 
 async function getAllComponents(category) {
-  const response = await fetch(`${HOST}/${category}`);
+  const response = await fetch(pathJoin(HOST, category));
   const data = await response.json();
 
   const components = data
@@ -37,7 +35,7 @@ async function getAllComponents(category) {
 
       return {
         title: component.name,
-        value: `${TEMPLATE}/${component.name}`,
+        value: pathJoin(TEMPLATE, component.name),
       };
     })
     .filter(Boolean);
@@ -51,7 +49,9 @@ async function createComponent(categoryName, selectedComponents) {
   for (const component of selectedComponents) {
     const componentName = component.split("/").slice(-1).join("");
 
-    const responseCode = await fetch(`${RAW}/${categoryName}/${componentName}`);
+    const responseCode = await fetch(
+      pathJoin(RAW, categoryName, componentName)
+    );
     const code = await responseCode.text();
 
     data.push({
