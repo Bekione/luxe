@@ -2,22 +2,22 @@ import fs from "fs";
 import path from "path";
 import { promisify } from "util";
 
-import { AnimatedTabs } from "../../../_components/ui/tabs";
+import { AnimatedTabs } from "@/_registry/ui/tabs";
 import { CodeBlock } from "../../../(ui)/ui/_components/component-page/CodeBlock";
-import { CardBackgroundShine } from "../../../_components/ui/cards";
+import { CardBackgroundShine } from "@/_registry/ui/cards";
 import {
   BadgeAnimatedBorder,
   BadgeBackgroundShine,
   BadgeRotateBorder,
-} from "../../../_components/ui/badges";
+} from "@/_registry/ui/badges";
 import {
   ButtonAnimatedBorder,
   ButtonBackgroundShine,
   ButtonRotateBorder,
-} from "../../../_components/ui/buttons";
+} from "@/_registry/ui/buttons";
 import { GradientLine } from "../../../_components/GradientLine";
 import { AnimateEnter } from "../AnimateEnter";
-import { DropdownMenu } from "../../../_components/ui/dropdown";
+import { DropdownMenu } from "@/_registry/ui/dropdown";
 
 async function readFilePath(filePath: string) {
   const readFile = promisify(fs.readFile);

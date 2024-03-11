@@ -5,37 +5,37 @@ import {
   ButtonSuccess,
   ButtonDestructive,
   ButtonLoading,
-} from "../app/_components/ui/buttons";
+} from "@/_registry/ui/buttons";
 
 import {
   BadgeAnimatedBorder,
   BadgeRotateBorder,
   BadgeBackgroundShine,
-} from "../app/_components/ui/badges";
+} from "@/_registry/ui/badges";
 
 import {
   CardAnimatedBorder,
   CardBackgroundShine,
   CardComment,
   CardRevealedPointer,
-} from "../app/_components/ui/cards";
+} from "@/_registry/ui/cards";
 
-import { AnimatedTabs } from "../app/_components/ui/tabs";
-import { DropdownMenu } from "../app/_components/ui/dropdown";
+import { AnimatedTabs } from "@/_registry/ui/tabs";
+import { DropdownMenu } from "@/_registry/ui/dropdown";
 
 import {
   TextGradient,
   TextShine,
   TextAnimatedGradient,
-} from "../app/_components/ui/texts";
+} from "@/_registry/ui/texts";
 
-import { InputFocusBlur } from "../app/_components/ui/inputs/InputFocusBlur";
+import { InputFocusBlur } from "@/_registry/ui/inputs/InputFocusBlur";
 
 import {
   TextAnimatedDecorationExample,
   TextGlitchExample,
   TextShakeExample,
-} from "../app/_components/ui/texts/examples";
+} from "@/_registry/ui/texts/examples";
 
 const TWCONFIG = {
   ["animated-border"]: {
