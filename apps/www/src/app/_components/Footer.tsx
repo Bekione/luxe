@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 
-import { cn } from "../../utils/cn";
+import { cn } from "@/utils/cn";
 
 export function Footer() {
   const pathname = usePathname();

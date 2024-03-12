@@ -17,7 +17,7 @@ import {
   BellIcon,
 } from "lucide-react";
 
-import { cn } from "../../../utils/cn";
+import { cn } from "@/utils/cn";
 
 function useMenuAnimation(isOpen: boolean) {
   const [scope, animate] = useAnimate();

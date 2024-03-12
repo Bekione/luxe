@@ -2,11 +2,8 @@
   "name": "root",
   "license": "MIT",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*",
-      "apps/*"
-    ]
+  "scripts": {
+    "clean": "./scripts/clean.sh"
   },
   "devDependencies": {
     "@lucasaugustsof/ts-config": "^0.1.0",

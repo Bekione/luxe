@@ -9,6 +9,7 @@ import { cn } from "../utils/cn";
 import { Footer } from "./_components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://luxe.guhrodrigues.com"),
   authors: [{ name: "Gustavo Rodrigues", url: "https://guhrodrigues.com" }],
   category: "developer",
   creator: "Gustavo Rodrigues",

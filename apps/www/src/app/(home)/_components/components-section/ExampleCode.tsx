@@ -3,7 +3,7 @@ import path from "path";
 import { promisify } from "util";
 
 import { AnimatedTabs } from "@/_registry/ui/tabs";
-import { CodeBlock } from "../../../(ui)/ui/_components/component-page/CodeBlock";
+import { CodeBlock } from "@/app/(ui)/ui/_components/component-page/CodeBlock";
 import { CardBackgroundShine } from "@/_registry/ui/cards";
 import {
   BadgeAnimatedBorder,
@@ -15,7 +15,7 @@ import {
   ButtonBackgroundShine,
   ButtonRotateBorder,
 } from "@/_registry/ui/buttons";
-import { GradientLine } from "../../../_components/GradientLine";
+import { GradientLine } from "@/app/_components/GradientLine";
 import { AnimateEnter } from "../AnimateEnter";
 import { DropdownMenu } from "@/_registry/ui/dropdown";
 
@@ -31,17 +31,17 @@ async function readFilePath(filePath: string) {
 }
 
 export async function ExampleCode() {
-  const animatedtabsFilePath = "./src/app/_components/ui/tabs/AnimatedTabs.tsx";
+  const animatedtabsFilePath = "./src/_registry/ui/tabs/AnimatedTabs.tsx";
   const animatedTabsExampleCode = await readFilePath(animatedtabsFilePath);
 
   const cardBackgroundShineFilePath =
-    "./src/app/_components/ui/cards/CardBackgroundShine.tsx";
+    "./src/_registry/ui/cards/CardBackgroundShine.tsx";
   const cardBackgroundShineExampleCode = await readFilePath(
     cardBackgroundShineFilePath
   );
 
   const dropdownMenuFilePath =
-    "./src/app/_components/ui/dropdown/DropdownMenu.tsx";
+    "./src/_registry/ui/dropdown/DropdownMenu.tsx";
   const dropdownMenuExampleCode = await readFilePath(dropdownMenuFilePath);
 
   return (
