@@ -6,7 +6,6 @@ const config: Config = {
   content: [
     "./src/**/*.{ts,tsx}",
   ],
-  prefix: 'ui-',
   // @ts-ignore
   presets: [tailwindConfig],
 };
