@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "@lucasaugustsof/ts-config/react.json"
+  ]
+}
