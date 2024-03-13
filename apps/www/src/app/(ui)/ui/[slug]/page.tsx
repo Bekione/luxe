@@ -8,7 +8,7 @@ import { promisify } from "util";
 
 import { MoveLeft } from "lucide-react";
 
-import { COMPONENTS } from "../../../../data/components";
+import { COMPONENTS } from "@/data/components";
 
 import { CodeBlock } from "../_components/component-page/CodeBlock";
 import { ComponentView } from "../_components/component-page/ComponentView";
@@ -76,7 +76,7 @@ export default async function ComponentPage({
     notFound();
   }
 
-  const filePath = `./src/app/_components/ui/${
+  const filePath = `../../packages/ui/src/components/${
     component.type
   }/${component.name.replace(/\s+/g, "")}.tsx`;
 

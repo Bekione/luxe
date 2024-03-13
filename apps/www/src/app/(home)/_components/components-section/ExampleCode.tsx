@@ -2,22 +2,20 @@ import fs from "fs";
 import path from "path";
 import { promisify } from "util";
 
-import { AnimatedTabs } from "@/_registry/ui/tabs";
+import { AnimatedTabs } from "@luxe/ui/tabs/AnimatedTabs";
+import { CardBackgroundShine } from "@luxe/ui/cards/CardBackgroundShine";
+import { BadgeAnimatedBorder } from "@luxe/ui/badges/BadgeAnimatedBorder";
+import { BadgeBackgroundShine } from "@luxe/ui/badges/BadgeBackgroundShine";
+import { BadgeRotateBorder } from "@luxe/ui/badges/BadgeRotateBorder";
+import { ButtonAnimatedBorder } from "@luxe/ui/buttons/ButtonAnimatedBorder";
+import { ButtonBackgroundShine } from "@luxe/ui/buttons/ButtonBackgroundShine";
+import { ButtonRotateBorder } from "@luxe/ui/buttons/ButtonRotateBorder";
+
+import { DropdownMenu } from "@luxe/ui/dropdown/DropdownMenu";
+
 import { CodeBlock } from "@/app/(ui)/ui/_components/component-page/CodeBlock";
-import { CardBackgroundShine } from "@/_registry/ui/cards";
-import {
-  BadgeAnimatedBorder,
-  BadgeBackgroundShine,
-  BadgeRotateBorder,
-} from "@/_registry/ui/badges";
-import {
-  ButtonAnimatedBorder,
-  ButtonBackgroundShine,
-  ButtonRotateBorder,
-} from "@/_registry/ui/buttons";
 import { GradientLine } from "@/app/_components/GradientLine";
 import { AnimateEnter } from "../AnimateEnter";
-import { DropdownMenu } from "@/_registry/ui/dropdown";
 
 async function readFilePath(filePath: string) {
   const readFile = promisify(fs.readFile);
@@ -31,17 +29,18 @@ async function readFilePath(filePath: string) {
 }
 
 export async function ExampleCode() {
-  const animatedtabsFilePath = "./src/_registry/ui/tabs/AnimatedTabs.tsx";
+  const animatedtabsFilePath =
+    "../../packages/ui/src/components/tabs/AnimatedTabs.tsx";
   const animatedTabsExampleCode = await readFilePath(animatedtabsFilePath);
 
   const cardBackgroundShineFilePath =
-    "./src/_registry/ui/cards/CardBackgroundShine.tsx";
+    "../../packages/ui/src/components/cards/CardBackgroundShine.tsx";
   const cardBackgroundShineExampleCode = await readFilePath(
     cardBackgroundShineFilePath
   );
 
   const dropdownMenuFilePath =
-    "./src/_registry/ui/dropdown/DropdownMenu.tsx";
+    "../../packages/ui/src/components/dropdown/DropdownMenu.tsx";
   const dropdownMenuExampleCode = await readFilePath(dropdownMenuFilePath);
 
   return (

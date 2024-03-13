@@ -1,4 +1,4 @@
-import { highlight } from "../../../../../utils/shiki";
+import { highlight } from "@/utils/shiki";
 
 type CodeProps = {
   code: string;

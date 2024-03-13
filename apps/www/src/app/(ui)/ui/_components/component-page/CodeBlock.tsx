@@ -2,9 +2,9 @@ import Link from "next/link";
 
 import { CopyIcon } from "lucide-react";
 
-import { cn } from "../../../../../utils/cn";
+import { cn } from "@/utils/cn";
 
-import { GradientLine } from "../../../../_components/GradientLine";
+import { GradientLine } from "@/app/_components/GradientLine";
 
 import Code from "./Code";
 import { CopyCode } from "./CopyCode";

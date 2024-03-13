@@ -6,7 +6,7 @@ import { PaletteIcon } from "lucide-react";
 
 import { useRouter } from "next/navigation";
 
-import { useProvider } from "../../_context/CommandMenuProvider";
+import { useProvider } from "@/app/(ui)/ui/_context/CommandMenuProvider";
 
 import {
   CommandDialog,

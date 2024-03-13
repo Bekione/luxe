@@ -38,7 +38,7 @@ function Tabs({
           onClick={() => setActiveIdx(index)}
           className={cn(
             "relative px-4 py-2 rounded-full z-[1]",
-            { "z-0": activeIdx === index},
+            { "z-0": activeIdx === index },
             tabClassName
           )}
           style={{

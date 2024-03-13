@@ -1,41 +1,30 @@
-import {
-  ButtonAnimatedBorder,
-  ButtonRotateBorder,
-  ButtonBackgroundShine,
-  ButtonSuccess,
-  ButtonDestructive,
-  ButtonLoading,
-} from "@/_registry/ui/buttons";
+import { ButtonAnimatedBorder } from "@luxe/ui/buttons/ButtonAnimatedBorder";
+import { ButtonRotateBorder } from "@luxe/ui/buttons/ButtonRotateBorder";
+import { ButtonBackgroundShine } from "@luxe/ui/buttons/ButtonBackgroundShine";
+import { ButtonDestructive } from "@luxe/ui/buttons/ButtonDestructive";
+import { ButtonSuccess } from "@luxe/ui/buttons/ButtonSuccess";
+import { ButtonLoading } from "@luxe/ui/buttons/ButtonLoading";
 
-import {
-  BadgeAnimatedBorder,
-  BadgeRotateBorder,
-  BadgeBackgroundShine,
-} from "@/_registry/ui/badges";
+import { BadgeAnimatedBorder } from "@luxe/ui/badges/BadgeAnimatedBorder";
+import { BadgeBackgroundShine } from "@luxe/ui/badges/BadgeBackgroundShine";
+import { BadgeRotateBorder } from "@luxe/ui/badges/BadgeRotateBorder";
 
-import {
-  CardAnimatedBorder,
-  CardBackgroundShine,
-  CardComment,
-  CardRevealedPointer,
-} from "@/_registry/ui/cards";
+import { CardAnimatedBorder } from "@luxe/ui/cards/CardAnimatedBorder";
+import { CardBackgroundShine } from "@luxe/ui/cards/CardBackgroundShine";
+import { CardComment } from "@luxe/ui/cards/CardComment";
+import { CardRevealedPointer } from "@luxe/ui/cards/CardRevealedPointer";
 
-import { AnimatedTabs } from "@/_registry/ui/tabs";
-import { DropdownMenu } from "@/_registry/ui/dropdown";
+import { AnimatedTabs } from "@luxe/ui/tabs/AnimatedTabs";
+import { DropdownMenu } from "@luxe/ui/dropdown/DropdownMenu";
 
-import {
-  TextGradient,
-  TextShine,
-  TextAnimatedGradient,
-} from "@/_registry/ui/texts";
+import { InputFocusBlur } from "@luxe/ui/inputs/InputFocusBlur";
 
-import { InputFocusBlur } from "@/_registry/ui/inputs/InputFocusBlur";
-
-import {
-  TextAnimatedDecorationExample,
-  TextGlitchExample,
-  TextShakeExample,
-} from "@/_registry/ui/texts/examples";
+import { TextGradient } from "@luxe/ui/texts/TextGradient";
+import { TextAnimatedGradient } from "@luxe/ui/texts/TextAnimatedGradient";
+import { TextShine } from "@luxe/ui/texts/TextShine";
+import { TextAnimatedDecorationExample } from "@luxe/ui/texts/examples/TextAnimatedDecorationExample";
+import { TextGlitchExample } from "@luxe/ui/texts/examples/TextGlitchExample";
+import { TextShakeExample } from "@luxe/ui/texts/examples/TextShakeExample";
 
 const TWCONFIG = {
   ["animated-border"]: {

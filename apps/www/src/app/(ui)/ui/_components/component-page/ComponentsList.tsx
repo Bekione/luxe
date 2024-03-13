@@ -5,11 +5,11 @@ import { usePathname } from "next/navigation";
 
 import { CommandIcon, SearchIcon } from "lucide-react";
 
-import { COMPONENTS } from "../../../../../data/components";
+import { COMPONENTS } from "@/data/components";
 
-import { useProvider } from "../../_context/CommandMenuProvider";
+import { useProvider } from "@/app/(ui)/ui/_context/CommandMenuProvider";
 
-import { cn } from "../../../../../utils/cn";
+import { cn } from "@/utils/cn";
 
 import { ComponentsListButton } from "./ComponentsListButton";
 

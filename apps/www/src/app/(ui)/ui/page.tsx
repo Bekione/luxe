@@ -3,9 +3,9 @@ import Link from "next/link";
 
 import { MoveLeft, MoveRightIcon } from "lucide-react";
 
-import { cn } from "../../../utils/cn";
+import { cn } from "@/utils/cn";
 
-import { COMPONENTS } from "../../../data/components";
+import { COMPONENTS } from "@/data/components";
 
 import { ComponentView } from "./_components/component-page/ComponentView";
 
