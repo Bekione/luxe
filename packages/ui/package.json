@@ -9,8 +9,7 @@
     "./*": "./src/components/*.tsx"
   },
   "scripts": {
-    "build": "tailwindcss -i ./src/styles.css -o dist/index.css",
-    "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch"
+    "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css"
   },
   "devDependencies": {
     "@luxe/tailwind-config": "workspace:*",
