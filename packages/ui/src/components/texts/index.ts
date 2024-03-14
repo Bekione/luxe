@@ -4,3 +4,4 @@ export * from "./TextAnimatedGradient";
 export * from "./TextGlitch";
 export * from "./TextShake";
 export * from "./TextAnimatedDecoration";
+export * from './examples'
