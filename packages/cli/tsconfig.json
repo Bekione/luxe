@@ -1,4 +1,14 @@
 {
-	"extends": "@lucasaugustsof/ts-config/base.json",
-	"include": ["./src/*"]
+  "extends": "@lucasaugustsof/ts-config/base.json",
+  "include": [
+    "./src/*"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "resolveJsonModule": true
+  }
 }
